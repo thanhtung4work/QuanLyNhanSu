@@ -3,6 +3,87 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Ứng dụng quản lý phòng ban</h1>
+</div>
+
+<div class="row align-items-lg-stretch">
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Nhân Viên</h3>
+                <p class="card-text">Chức năng: thêm, sửa, xóa nhân viên, thêm người thân</p>
+                <a asp-controller="Employees" class="card-link btn btn-primary">Xem them</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Dự Án</h3>
+                <p class="card-text">Chuc nang quan ly du an: Them, sua, xoa</p>
+                <a asp-controller="Projects" class="card-link btn btn-danger">Xem them</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Phòng Ban</h3>
+                <p class="card-text">Chuc nang quan ly phong ban: Them, sua, xoa</p>
+                <a asp-controller="Departments" class="card-link btn btn-warning">Xem them</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Địa Điểm</h3>
+                <p class="card-text">Chức năng quản lý địa điểm: thêm, sửa, xóa địa điểm</p>
+                <a asp-controller="Locations" class="card-link btn btn-success">Xem them</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Chức Vụ</h3>
+                <p class="card-text">Chức năng quản lý chức vụ: thêm, sửa, xóa chức vụ</p>
+                <a asp-controller="Jobs" class="card-link btn btn-secondary">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Thành Viên Dự Án</h3>
+                <p class="card-text">Chức năng quản lý thành viên dự án: thêm, sửa, xóa chức vụ</p>
+                <a asp-controller="ProjectParticipants" class="card-link btn">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Trưởng Phòng</h3>
+                <p class="card-text">Chức năng quản lý trưởng phòng: thêm, sửa, xóa trưởng phòng</p>
+                <a asp-controller="DepartmentManagers" class="card-link btn">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quản Lý Thân Nhân</h3>
+                <p class="card-text">Chức năng quản lý thân nhân của nhân viên: thêm, sửa, xóa người thân của nhân viên</p>
+                <a asp-controller="Relatives" class="card-link btn">Xem thêm</a>
+            </div>
+        </div>
+    </div>
 </div>
