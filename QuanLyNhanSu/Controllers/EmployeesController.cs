@@ -85,8 +85,8 @@ namespace QuanLyNhanSu.Controllers
             {
                 return NotFound();
             }
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "DepartmentId", employee.DepartmentId);
-            ViewData["JobId"] = new SelectList(_context.Jobs, "JobId", "JobId", employee.JobId);
+            ViewData["DepartmentId"] = new SelectList(_context.Departments, "DepartmentId", "Name", employee.DepartmentId);
+            ViewData["JobId"] = new SelectList(_context.Jobs, "JobId", "JobName", employee.JobId);
             return View(employee);
         }
 

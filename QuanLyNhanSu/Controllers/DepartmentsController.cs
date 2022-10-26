@@ -82,7 +82,7 @@ namespace QuanLyNhanSu.Controllers
             {
                 return NotFound();
             }
-            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "LocationId", department.LocationId);
+            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "Address", department.LocationId);
             return View(department);
         }
 

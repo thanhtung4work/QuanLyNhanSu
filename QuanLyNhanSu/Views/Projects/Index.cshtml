@@ -40,12 +40,12 @@
                 @Html.DisplayFor(modelItem => item.EndTime)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Location.LocationId)
+                @Html.DisplayFor(modelItem => item.Location.Address)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProjectId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProjectId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProjectId">Delete</a>
+                <div><a asp-action="Edit" asp-route-id="@item.ProjectId" class="btn btn-primary">Edit</a></div>
+                <div class="my-2"><a asp-action="Details" asp-route-id="@item.ProjectId" class="btn btn-info">Details</a></div>
+                <div><a asp-action="Delete" asp-route-id="@item.ProjectId" class="btn btn-danger">Delete</a> </div>
             </td>
         </tr>
 }
