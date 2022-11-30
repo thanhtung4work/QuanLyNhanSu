@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyNhanSu.Entity\QuanLyNhanSu.Entity.csproj" />
+    <ProjectReference Include="..\QuanLyNhanSu.Persistence\QuanLyNhanSu.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
